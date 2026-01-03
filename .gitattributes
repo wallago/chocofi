@@ -1,0 +1,3 @@
+*.sch -whitespace
+*.kicad_sch -whitespace
+*.kicad_pcb -whitespace
