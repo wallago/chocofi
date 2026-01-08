@@ -4,4 +4,5 @@
   (lib (name "my")(type "KiCad")(uri "${KIPRJMOD}/my.pretty")(options "")(descr ""))
   (lib (name "kbd")(type "KiCad")(uri "${KIPRJMOD}/kbd.pretty")(options "")(descr ""))
   (lib (name "nice_nano")(type "KiCad")(uri "/home/wallago/Perso/chocofi/nice_nano.pretty")(options "")(descr ""))
+  (lib (name "Library")(type "KiCad")(uri "/home/wallago/Perso/chocofi/nice_nano/Library.pretty")(options "")(descr ""))
 )

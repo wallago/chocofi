@@ -878,30 +878,6 @@
 		(remove_unused_layers no)
 		(uuid "363990b9-f5a4-4860-b457-e8a0de5d5f64")
 	)
-	(pad "31" thru_hole circle
-		(at 8.89 5.08)
-		(size 1.7526 1.7526)
-		(drill 1.0922)
-		(layers "*.Cu" "*.SilkS" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "49f5b416-f78e-4903-b9ca-e818d6bb3822")
-	)
-	(pad "32" thru_hole circle
-		(at 8.89 2.54)
-		(size 1.7526 1.7526)
-		(drill 1.0922)
-		(layers "*.Cu" "*.SilkS" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "ac35d922-cb0d-47bc-812a-4418a2766056")
-	)
-	(pad "33" thru_hole circle
-		(at 8.89 0)
-		(size 1.7526 1.7526)
-		(drill 1.0922)
-		(layers "*.Cu" "*.SilkS" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "55d4ebc1-2065-40a1-bff1-e06cf9c33835")
-	)
 	(embedded_fonts no)
 	(model "/Users/danny/Documents/proj/custom-keyboard/kicad-libs/3d_models/ArduinoProMicro.wrl"
 		(offset
