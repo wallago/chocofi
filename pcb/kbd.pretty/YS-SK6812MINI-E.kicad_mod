@@ -78,6 +78,36 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
+		(uuid "c0f59612-d9f3-4378-843f-ec0828da9b46")
+	)
+	(fp_line
+		(start -3.9 0.25)
+		(end -3.9 1.85)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "b55cb4f9-a938-4e0b-a441-127da46350fb")
+	)
+	(fp_line
+		(start -3.9 1.85)
+		(end 3.9 1.85)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "5697815d-47c5-4672-8351-0b8596e3e580")
+	)
+	(fp_line
+		(start 3.9 -1.85)
+		(end -3.9 -1.85)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
 		(uuid "601ac574-b954-46de-8907-604ef23fad2e")
 	)
 	(fp_line
@@ -290,28 +320,62 @@
 		(layer "Edge.Cuts")
 		(uuid "864c11a8-b8f7-48fb-84a3-53c2b58a557f")
 	)
-	(pad "1" smd rect
+	(fp_text user "GND"
+		(at -6.7 -0.1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "6c260fc6-f450-4e38-8d80-ce475f0a5002")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "GND"
+		(at -3.5 -0.1 0)
+		(unlocked yes)
+		(layer "B.SilkS")
+		(uuid "6231b049-2b6b-41c7-afb5-3ddc0f873394")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(pad "1" thru_hole rect
 		(at 2.75 -0.7)
 		(size 1.7 1)
-		(layers "*.Paste" "*.Mask" "F.Cu")
+		(drill 0.4)
+		(layers "*.Cu" "*.Paste" "*.Mask")
+		(remove_unused_layers no)
 		(uuid "f91b7008-3728-4e7f-9311-db52da11f53e")
 	)
-	(pad "2" smd rect
+	(pad "2" thru_hole rect
 		(at 2.75 0.7)
 		(size 1.7 1)
-		(layers "*.Paste" "*.Mask" "F.Cu")
+		(drill 0.4)
+		(layers "*.Cu" "*.Paste" "*.Mask")
+		(remove_unused_layers no)
 		(uuid "3c30d7d2-a983-4486-8663-9244abd87bc3")
 	)
-	(pad "3" smd rect
+	(pad "3" thru_hole rect
 		(at -2.75 0.7)
 		(size 1.7 1)
-		(layers "*.Paste" "*.Mask" "F.Cu")
+		(drill 0.4)
+		(layers "*.Cu" "*.Paste" "*.Mask")
+		(remove_unused_layers no)
 		(uuid "49f7c9b2-2195-4cbe-af13-9adfa88ff700")
 	)
-	(pad "4" smd rect
+	(pad "4" thru_hole rect
 		(at -2.75 -0.7)
 		(size 1.7 1)
-		(layers "*.Paste" "*.Mask" "F.Cu")
+		(drill 0.4)
+		(layers "*.Cu" "*.Paste" "*.Mask")
+		(remove_unused_layers no)
 		(uuid "a1f82c17-7f48-4e5d-8047-8099780528fc")
 	)
 	(embedded_fonts no)
