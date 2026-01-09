@@ -553,7 +553,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "robot.net",
-      "plot": "",
+      "plot": "gerber/",
       "pos_files": "",
       "specctra_dsn": "chocofi2.dsn",
       "step": "chocofi.step",
