@@ -1,3 +1,0 @@
-&nice_view_spi {
-    cs-gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
-};
