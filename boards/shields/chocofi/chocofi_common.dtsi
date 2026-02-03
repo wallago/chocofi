@@ -9,7 +9,7 @@
 
 / {
     chosen {
-        zephyr,display = &nice_view_spi;
+        /* zephyr,display = &nice_view_spi; */
         zmk,kscan = &kscan0;
         zmk,physical-layout = &splitkb_5col_layout;
     };
