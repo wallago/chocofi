@@ -1,4 +1,4 @@
-#include "./chocofi_common.dtsi"
+#include "./v01_common.dtsi"
 
 &splitkb_5col_layout {
     transform = <&default_transform>;

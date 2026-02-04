@@ -1,6 +1,6 @@
 file_format: "1"
-id: chocofi
-name: 01
+id: v01
+name: v01
 type: shield
 url:
 requires: [pro_micro]
@@ -9,5 +9,5 @@ features:
   - keys
   - studio
 siblings:
-  - chocofi_left
-  - chocofi_right
+  - v01_left
+  - v01_right
