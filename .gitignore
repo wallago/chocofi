@@ -38,3 +38,12 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+
+# ZMK Build artifacts
+build/
+.west/
+modules/
+zephyr/
+zmk/
+nice-view-gem/

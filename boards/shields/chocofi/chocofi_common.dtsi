@@ -1,0 +1,22 @@
+/*
+ * Copyright (c) 2022 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/matrix_transform.h>
+#include "./chocofi-layouts.dtsi"
+
+/ {
+    chosen {
+        /* zephyr,display = &nice_view_spi; */
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &splitkb_5col_layout;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
+        diode-direction = "row2col";
+    };
+};
