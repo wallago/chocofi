@@ -42,6 +42,7 @@
               --product "keyboard" \
               --part "chocofi" \
               --code "WL25-KB-CHOCOFI" \
+              --tips "For FreeCAD: exec(open("/path/to/file.py").read())" \
               --tips "west init -l config" \
               --tips "west update" \
               --tips "west build -d build/cl_studio -b nice_nano_v2 -s zmk/app -S studio-rpc-usb-uart -- -DSHIELD=chocofi_left -DCONFIG_ZMK_STUDIO=y -DBOARD_ROOT=$PWD" \
