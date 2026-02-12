@@ -91,52 +91,42 @@ pcb_wire = Part.Wire(edges)
 
 TOTAL_HEIGHT = FLOOR_THICKNESS + WALL_HEIGHT
 
-# Offset the wire outward to get inner wall (PCB + tolerance)
 inner_wire = pcb_wire.makeOffset2D(TOLERANCE)
-# Offset further for outer wall (PCB + tolerance + wall)
 outer_wire = pcb_wire.makeOffset2D(TOLERANCE + WALL_THICKNESS)
 
-# Make faces
 inner_face = Part.Face(inner_wire)
 outer_face = Part.Face(outer_wire)
 
-# FLOOR: outer shape extruded to floor thickness
 floor_solid = outer_face.extrude(FreeCAD.Vector(0, 0, FLOOR_THICKNESS))
 
-# WALLS: ring between outer and inner, extruded upward from floor
 wall_face = outer_face.cut(inner_face)
 wall_solid = wall_face.extrude(FreeCAD.Vector(0, 0, WALL_HEIGHT))
 wall_solid.translate(FreeCAD.Vector(0, 0, FLOOR_THICKNESS))
 
-# Combine floor + walls
 case = floor_solid.fuse(wall_solid)
 
 # ── OUTER RIDGE for top plate snap-fit ──
-# A ridge that sticks up from the top of the wall, on the outer side.
-# The top plate will have a matching inner border that slides over this.
-RIDGE_WIDTH = 1.2  # mm - ridge thickness (thinner than main wall)
-RIDGE_HEIGHT = 2.0  # mm - how far ridge sticks up above wall top
+RIDGE_WIDTH = 1.2
+RIDGE_HEIGHT = 2.0
 
-ridge_z = FLOOR_THICKNESS + WALL_HEIGHT  # starts at wall top
+ridge_z = FLOOR_THICKNESS + WALL_HEIGHT
 
-# Ridge sits on the outer half of the wall
-# outer_wire = outside of wall, ridge_inner = inset from outer by RIDGE_WIDTH
 ridge_inner_wire = pcb_wire.makeOffset2D(TOLERANCE + WALL_THICKNESS - RIDGE_WIDTH)
 ridge_inner_face = Part.Face(ridge_inner_wire)
 
-# Ridge ring = outer_face minus ridge_inner_face
 ridge_face = outer_face.cut(ridge_inner_face)
 ridge_solid = ridge_face.extrude(FreeCAD.Vector(0, 0, RIDGE_HEIGHT))
 ridge_solid.translate(FreeCAD.Vector(0, 0, ridge_z))
 
 case = case.fuse(ridge_solid)
 
-# ── STANDOFFS at mounting holes ──
-# Small posts rising from the floor so PCB sits elevated.
-# Battery goes in the space underneath the PCB.
-STANDOFF_HEIGHT = 3.5  # mm - height above floor (battery space)
-STANDOFF_OUTER_R = 2.5  # mm
-STANDOFF_INNER_R = 1.1  # mm (M2 insert / screw hole)
+# ── STANDOFFS with M2 heat-set insert holes ──
+# M2 heat-set inserts: 3mm long, 3.5mm OD
+# Screws come from the top plate down into the inserts
+STANDOFF_HEIGHT = 3.5  # mm above floor (battery space)
+STANDOFF_OUTER_R = 3.5  # mm (5mm diameter post)
+INSERT_HOLE_D = 3.2  # mm - slightly under 3.5mm OD for press-fit
+INSERT_HOLE_DEPTH = 3.0  # mm - insert length
 
 MOUNTING_HOLES = [
     (148.971, 69.85),
@@ -150,11 +140,14 @@ MOUNTING_HOLES = [
 
 for mx, my in MOUNTING_HOLES:
     pos = FreeCAD.Vector(mx, -my, FLOOR_THICKNESS)
+    # Solid standoff post (no through hole)
     post = Part.makeCylinder(STANDOFF_OUTER_R, STANDOFF_HEIGHT, pos)
-    hole = Part.makeCylinder(
-        STANDOFF_INNER_R, STANDOFF_HEIGHT + FLOOR_THICKNESS, FreeCAD.Vector(mx, -my, 0)
-    )
     case = case.fuse(post)
+    # Blind hole from top for heat-set insert
+    insert_z = FLOOR_THICKNESS + STANDOFF_HEIGHT - INSERT_HOLE_DEPTH
+    hole = Part.makeCylinder(
+        INSERT_HOLE_D / 2.0, INSERT_HOLE_DEPTH + 0.01, FreeCAD.Vector(mx, -my, insert_z)
+    )
     case = case.cut(hole)
 
 case = case.removeSplitter()
@@ -184,6 +177,7 @@ bb = case.BoundBox
 print(f"\nDone! Case: {bb.XLength:.1f} x {bb.YLength:.1f} x {bb.ZLength:.1f} mm")
 print(f"  Floor: {FLOOR_THICKNESS} mm")
 print(f"  Wall height: {WALL_HEIGHT} mm above floor")
-print(f"  Wall thickness: {WALL_THICKNESS} mm (border)")
-print(f"  Tolerance: {TOLERANCE} mm gap around PCB")
-print(f"  Total height: {TOTAL_HEIGHT} mm")
+print(f"  Wall thickness: {WALL_THICKNESS} mm")
+print(
+    f"  Standoffs: {STANDOFF_HEIGHT} mm, M2 insert holes ({INSERT_HOLE_D}mm x {INSERT_HOLE_DEPTH}mm blind)"
+)
