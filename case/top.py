@@ -10,10 +10,11 @@ Features:
 - Rounded tower corners matching plate outline
 """
 
+import os
+import math
 import FreeCAD
 import Part
-import math
-import os
+import Mesh
 
 # ══════════════════════════════════════════
 # PARAMETERS
@@ -62,7 +63,7 @@ TOWER_CY = TOWER_FRONT_Y + OUTER_Y / 2.0
 TOWER_CORNER_R = 3.2  # mm (matches plate corner arcs)
 
 # Tower right side flush with plate outer edge, left side pulled in 1.5mm to clear keycaps
-TOWER_LEFT = TOWER_CX - OUTER_X / 2.0 + 1.5  # 167.65 (was 166.15)
+TOWER_LEFT = TOWER_CX - OUTER_X / 2.0 + 1.5  # 167.65
 TOWER_RIGHT = 190.7
 
 # Nice!view recess: 2mm border around screen window
@@ -155,6 +156,16 @@ SWITCHES = [
     (174.660, 118.790, -60.0),
 ]
 
+MOUNTING_HOLES = [
+    (148.971, 69.85),
+    (185.42, 106.426),
+    (123.952, 104.14),
+    (167.005, 110.363),
+    (171.323, 96.901),
+    (95.0, 83.82),
+    (95.0, 66.802),
+]
+
 # ══════════════════════════════════════════
 # HELPERS
 # ══════════════════════════════════════════
@@ -188,45 +199,6 @@ def make_rect_face(cx, cy, w, h):
         FreeCAD.Vector(cx - w / 2, -(cy + h / 2), 0),
     ]
     edges = [Part.makeLine(pts[i], pts[(i + 1) % 4]) for i in range(4)]
-    return Part.Face(Part.Wire(edges))
-
-
-def make_rounded_rect_face(cx_fc, cy_fc, hw, hh, r):
-    c45 = math.cos(math.pi / 4)
-    tl = (cx_fc - hw + r, cy_fc + hh - r)
-    tr = (cx_fc + hw - r, cy_fc + hh - r)
-    br = (cx_fc + hw - r, cy_fc - hh + r)
-    bl = (cx_fc - hw + r, cy_fc - hh + r)
-
-    def v(x, y):
-        return FreeCAD.Vector(x, y, 0)
-
-    edges = [
-        Part.makeLine(v(tl[0], tl[1] + r), v(tr[0], tr[1] + r)),
-        Part.Arc(
-            v(tr[0], tr[1] + r),
-            v(tr[0] + r * c45, tr[1] + r * c45),
-            v(tr[0] + r, tr[1]),
-        ).toShape(),
-        Part.makeLine(v(tr[0] + r, tr[1]), v(br[0] + r, br[1])),
-        Part.Arc(
-            v(br[0] + r, br[1]),
-            v(br[0] + r * c45, br[1] - r * c45),
-            v(br[0], br[1] - r),
-        ).toShape(),
-        Part.makeLine(v(br[0], br[1] - r), v(bl[0], bl[1] - r)),
-        Part.Arc(
-            v(bl[0], bl[1] - r),
-            v(bl[0] - r * c45, bl[1] - r * c45),
-            v(bl[0] - r, bl[1]),
-        ).toShape(),
-        Part.makeLine(v(bl[0] - r, bl[1]), v(tl[0] - r, tl[1])),
-        Part.Arc(
-            v(tl[0] - r, tl[1]),
-            v(tl[0] - r * c45, tl[1] + r * c45),
-            v(tl[0], tl[1] + r),
-        ).toShape(),
-    ]
     return Part.Face(Part.Wire(edges))
 
 
@@ -290,6 +262,7 @@ groove.translate(FreeCAD.Vector(0, 0, -GROOVE_DEPTH))
 plate = plate.cut(groove)
 
 # ── 3. Switch cutouts ──
+switch_cuts = []
 for sx, sy, rot in SWITCHES:
     half = CHOC_HOLE / 2.0
     rad = math.radians(rot)
@@ -304,7 +277,10 @@ for sx, sy, rot in SWITCHES:
         FreeCAD.Vector(0, 0, PLATE_THICKNESS + GROOVE_DEPTH + 2)
     )
     cut_solid.translate(FreeCAD.Vector(0, 0, -GROOVE_DEPTH - 1))
-    plate = plate.cut(cut_solid)
+    switch_cuts.append(cut_solid)
+
+if switch_cuts:
+    plate = plate.cut(Part.Compound(switch_cuts))
 
 # ══════════════════════════════════════════
 # NICE!VIEW TOWER
@@ -317,8 +293,6 @@ tower_top_z = tower_z_base + TOWER_HEIGHT
 tower_actual_w = TOWER_RIGHT - TOWER_LEFT
 tower_actual_cx = (TOWER_LEFT + TOWER_RIGHT) / 2.0
 
-# Left wall is thin, so use smaller radius for left corners
-# Right corners match plate arcs (3.2mm)
 R_LEFT = 1.0  # small radius for thin left wall
 R_RIGHT = TOWER_CORNER_R  # 3.2mm for right (matches plate)
 
@@ -328,7 +302,6 @@ cx_fc = tower_actual_cx
 cy_fc = -TOWER_CY
 c45 = math.cos(math.pi / 4)
 
-# Corner centers with different radii
 tl = (cx_fc - hw + R_LEFT, cy_fc + hh - R_LEFT)  # top-left
 tr = (cx_fc + hw - R_RIGHT, cy_fc + hh - R_RIGHT)  # top-right
 br = (cx_fc + hw - R_RIGHT, cy_fc - hh + R_RIGHT)  # bottom-right
@@ -340,33 +313,25 @@ def tv(x, y):
 
 
 tower_edges = [
-    # Top edge
     Part.makeLine(tv(tl[0], tl[1] + R_LEFT), tv(tr[0], tr[1] + R_RIGHT)),
-    # Top-right arc
     Part.Arc(
         tv(tr[0], tr[1] + R_RIGHT),
         tv(tr[0] + R_RIGHT * c45, tr[1] + R_RIGHT * c45),
         tv(tr[0] + R_RIGHT, tr[1]),
     ).toShape(),
-    # Right edge
     Part.makeLine(tv(tr[0] + R_RIGHT, tr[1]), tv(br[0] + R_RIGHT, br[1])),
-    # Bottom-right arc
     Part.Arc(
         tv(br[0] + R_RIGHT, br[1]),
         tv(br[0] + R_RIGHT * c45, br[1] - R_RIGHT * c45),
         tv(br[0], br[1] - R_RIGHT),
     ).toShape(),
-    # Bottom edge
     Part.makeLine(tv(br[0], br[1] - R_RIGHT), tv(bl[0], bl[1] - R_LEFT)),
-    # Bottom-left arc
     Part.Arc(
         tv(bl[0], bl[1] - R_LEFT),
         tv(bl[0] - R_LEFT * c45, bl[1] - R_LEFT * c45),
         tv(bl[0] - R_LEFT, bl[1]),
     ).toShape(),
-    # Left edge
     Part.makeLine(tv(bl[0] - R_LEFT, bl[1]), tv(tl[0] - R_LEFT, tl[1])),
-    # Top-left arc
     Part.Arc(
         tv(tl[0] - R_LEFT, tl[1]),
         tv(tl[0] - R_LEFT * c45, tl[1] + R_LEFT * c45),
@@ -378,7 +343,6 @@ tower_face = Part.Face(Part.Wire(tower_edges))
 tower_solid = tower_face.extrude(FreeCAD.Vector(0, 0, TOWER_HEIGHT))
 tower_solid.translate(FreeCAD.Vector(0, 0, tower_z_base))
 
-# Trim to plate outline
 plate_boundary = outer_face.extrude(FreeCAD.Vector(0, 0, 50))
 plate_boundary.translate(FreeCAD.Vector(0, 0, -10))
 tower_solid = tower_solid.common(plate_boundary)
@@ -396,15 +360,13 @@ plate_hole.translate(FreeCAD.Vector(0, 0, -0.01))
 plate = plate.cut(plate_hole)
 
 # ── 7a. Inner guide walls for nice!view positioning ──
-# 1.5mm tall ridges on both sides (left/right in X)
-# At screen center ± (5tower_inner.4mm screen half + 1.6mm PCB inset) = ±7.0mm
+# At screen center ± (5.4mm screen half + 1.6mm PCB inset) = ±7.0mm
 GUIDE_WALL_H = TOWER_HEIGHT - TOWER_WALL - 1.4  # full cavity height, flush with lid
 GUIDE_WALL_THICK = 1.6  # mm thick (X direction)
 GUIDE_OFFSET = 5.4 + 1.7  # 7.1mm from screen center to wall inner edge
 
-# Left guide wall (lower X) - extends to cavity left edge
-left_wall_inner = SCREEN_CX - GUIDE_OFFSET  # inner edge aligned with nice!view PCB
-left_wall_outer = TOWER_CX - HOLE_X / 2.0  # extend to cavity left edge
+left_wall_inner = SCREEN_CX - GUIDE_OFFSET
+left_wall_outer = TOWER_CX - HOLE_X / 2.0
 left_wall_w = left_wall_inner - left_wall_outer
 left_wall_cx = (left_wall_inner + left_wall_outer) / 2.0
 left_wall = make_rect_face(left_wall_cx, TOWER_CY, left_wall_w, CAVITY_Y)
@@ -412,7 +374,6 @@ lw = left_wall.extrude(FreeCAD.Vector(0, 0, GUIDE_WALL_H))
 lw.translate(FreeCAD.Vector(0, 0, tower_z_base + 3))
 plate = plate.fuse(lw)
 
-# Right guide wall (higher X)
 right_wall_cx = SCREEN_CX + GUIDE_OFFSET + GUIDE_WALL_THICK / 2.0
 right_wall = make_rect_face(right_wall_cx, TOWER_CY, GUIDE_WALL_THICK, CAVITY_Y)
 rw = right_wall.extrude(FreeCAD.Vector(0, 0, GUIDE_WALL_H))
@@ -426,8 +387,7 @@ screen_cut.translate(FreeCAD.Vector(0, 0, tower_top_z - TOWER_WALL - 1))
 plate = plate.cut(screen_cut)
 
 # ── 9. USB-C notch ──
-# Fixed absolute position (doesn't move with tower height)
-usb_z_top = 2.26  # absolute Z, preserved from original 3mm tower height
+usb_z_top = 2.26
 usb_face = make_usbc_notch_face(
     TOWER_CX, -TOWER_FRONT_Y, usb_z_top, USBC_W / 2.0, USBC_R
 )
@@ -439,6 +399,7 @@ plate = plate.cut(usb_cut)
 skirt_inner_fc_y = -(TOWER_FRONT_Y - BORDER_WIDTH + TOLERANCE)
 usb_hw = USBC_W / 2.0
 
+reinf_solids = []
 for x_start in [TOWER_CX - usb_hw - REINFORCE_W, TOWER_CX + usb_hw]:
     reinf = Part.makeBox(
         REINFORCE_W,
@@ -450,50 +411,84 @@ for x_start in [TOWER_CX - usb_hw - REINFORCE_W, TOWER_CX + usb_hw]:
             -REINFORCE_H + REINFORCE_Z_UP,
         ),
     )
-    plate = plate.fuse(reinf)
+    reinf_solids.append(reinf)
 
-# ── Cleanup ──
-plate = plate.removeSplitter()
+if reinf_solids:
+    plate = plate.fuse(Part.Compound(reinf_solids))
 
-# ── 11. M2 countersunk screw holes (matching bottom case standoffs) ──
-M2_THROUGH = 2.2  # mm - M2 screw clearance hole
-M2_HEAD_D = 4.0  # mm - M2 DIN 7991 dk max from datasheet
-# 90° cone angle: depth = (head_d - through_d) / 2
+# ── 11. M2 countersunk screw holes ──
+M2_THROUGH = 2.2  # mm
+M2_HEAD_D = 4.0  # mm
 M2_HEAD_DEPTH = (M2_HEAD_D - M2_THROUGH) / 2.0  # 0.9mm
-M2_HEX_S = 1.3  # mm - hex socket width (Allen key size for M2)
-M2_HEX_DEPTH = 0.5  # mm - hex socket recess depth into plate top
+M2_HEX_S = 1.3  # mm
+M2_HEX_DEPTH = 0.5  # mm
 
-MOUNTING_HOLES = [
-    (148.971, 69.85),
-    (185.42, 106.426),
-    (123.952, 104.14),
-    (167.005, 110.363),
-    (171.323, 96.901),
-    (95.0, 83.82),
-    (95.0, 66.802),
-]
-
+hole_cuts = []
 for mx, my in MOUNTING_HOLES:
-    # Through hole (full depth: plate + skirt)
     hole = Part.makeCylinder(
         M2_THROUGH / 2.0,
         PLATE_THICKNESS + GROOVE_DEPTH + 2,
         FreeCAD.Vector(mx, -my, -GROOVE_DEPTH - 1),
     )
-    plate = plate.cut(hole)
-    # Chamfered countersink (90° cone for DIN 7991 flat head)
     cone = Part.makeCone(
         M2_HEAD_D / 2.0,
         M2_THROUGH / 2.0,
         M2_HEAD_DEPTH,
         FreeCAD.Vector(mx, -my, PLATE_THICKNESS - M2_HEAD_DEPTH),
     )
-    plate = plate.cut(cone)
-    # Hex socket recess at the top surface
     hex_socket = Part.makeCylinder(
         M2_HEX_S, M2_HEX_DEPTH, FreeCAD.Vector(mx, -my, PLATE_THICKNESS - M2_HEX_DEPTH)
     )
-    plate = plate.cut(hex_socket)
+    hole_cuts.extend([hole, cone, hex_socket])
+
+if hole_cuts:
+    plate = plate.cut(Part.Compound(hole_cuts))
+
+# ── Cleanup ──
+plate = plate.removeSplitter()
+
+# ══════════════════════════════════════════
+# TOWER REINFORCEMENT (Left Side)
+# ══════════════════════════════════════════
+
+# ── Parameters ──
+REINF_HEIGHT = 4.0  # Height of the reinforcement (Z)
+REINF_WIDTH = 1.5  # How far it sticks out to the left (X)
+REINF_Y_GAP = 1  # Offset from top/bottom of tower (Y)
+
+# 1. Define the length based on tower size minus the gaps
+reinf_len = OUTER_Y - (REINF_Y_GAP * 2)
+
+# 2. Create the base profile (a triangle for a sloped gusset)
+# Points: (0,0), (Width, 0), (Width, Height) -> creates a slope leaning against tower
+p1 = FreeCAD.Vector(0, 0, 0)
+p2 = FreeCAD.Vector(REINF_WIDTH, 0, 0)
+p3 = FreeCAD.Vector(REINF_WIDTH, 0, REINF_HEIGHT)
+
+# Create the triangular face
+reinf_wire = Part.makePolygon([p1, p2, p3, p1])
+reinf_face = Part.Face(reinf_wire)
+
+# 3. Extrude the triangle along the length of the tower
+reinf_gusset = reinf_face.extrude(FreeCAD.Vector(0, reinf_len, 0))
+
+# 4. Position it
+# X: Place it so the right side (p2/p3) is flush with TOWER_LEFT
+# Y: Center it relative to the tower
+# Z: Place it on top of the plate thickness
+reinf_gusset.translate(
+    FreeCAD.Vector(
+        TOWER_LEFT - REINF_WIDTH,
+        -(TOWER_CY + (OUTER_Y / 2.0) - REINF_Y_GAP),
+        tower_z_base,
+    )
+)
+
+# 5. Fuse it to the plate
+plate = plate.fuse(reinf_gusset)
+
+# ── Cleanup ──
+plate = plate.removeSplitter()
 
 # ══════════════════════════════════════════
 # EXPORT
@@ -508,8 +503,6 @@ Part.export([part], step_path)
 print(f"STEP -> {step_path}")
 
 try:
-    import Mesh
-
     stl_path = os.path.expanduser("~/chocofi_top_plate.stl")
     Mesh.export([part], stl_path)
     print(f"STL  -> {stl_path}")

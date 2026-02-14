@@ -3,20 +3,31 @@ Chocofi Bottom Case - Floor
 =================================================
 """
 
+import os
 import FreeCAD
 import Part
-import os
+import Mesh
 
 # ══════════════════════════════════════════
 # PARAMETERS
 # ══════════════════════════════════════════
-WALL_THICKNESS = 2.2  # mm border wall thickness
+WALL_THICKNESS = 2.2  # mm, border wall thickness
 FLOOR_THICKNESS = 1.2  # mm
-WALL_HEIGHT = 5.0  # mm height of border walls above the floor
-TOLERANCE = 0.5  # mm gap between PCB edge and inner wall
+WALL_HEIGHT = 5.0  # mm, height of border walls above the floor
+TOLERANCE = 0.5  # mm, gap between PCB edge and inner wall
+
+# Ridge for top plate snap-fit
+RIDGE_WIDTH = 1.2  # mm
+RIDGE_HEIGHT = 2.0  # mm
+
+# Standoffs (M2 heat-set inserts: 3mm long, 3.5mm OD)
+STANDOFF_HEIGHT = 4.5  # mm, height above floor (creates battery space)
+STANDOFF_OUTER_R = 3.5  # mm, (7mm diameter post to ensure strong walls)
+INSERT_HOLE_D = 3.2  # mm, slightly under 3.5mm OD for press-fit
+INSERT_HOLE_DEPTH = 3.0  # mm, insert length
 
 # ══════════════════════════════════════════
-# PCB OUTLINE from KiCad Edge.Cuts
+# PCB OUTLINE (From KiCad Edge.Cuts)
 # ══════════════════════════════════════════
 SEGMENTS = [
     ("line", (112.910, 44.495), (112.927, 49.452)),
@@ -63,6 +74,16 @@ SEGMENTS = [
     ("arc", (113.410, 43.995), (112.910, 44.495), (113.056, 44.141)),
 ]
 
+MOUNTING_HOLES = [
+    (148.971, 69.85),
+    (185.42, 106.426),
+    (123.952, 104.14),
+    (167.005, 110.363),
+    (171.323, 96.901),
+    (95.0, 83.82),
+    (95.0, 66.802),
+]
+
 # ══════════════════════════════════════════
 # BUILD WIRE
 # ══════════════════════════════════════════
@@ -73,6 +94,7 @@ for seg in SEGMENTS:
         p2 = FreeCAD.Vector(seg[2][0], -seg[2][1], 0)
         if p1.distanceToPoint(p2) > 0.001:
             edges.append(Part.makeLine(p1, p2))
+
     elif seg[0] == "arc":
         p1 = FreeCAD.Vector(seg[1][0], -seg[1][1], 0)
         p2 = FreeCAD.Vector(seg[2][0], -seg[2][1], 0)
@@ -89,28 +111,25 @@ pcb_wire = Part.Wire(edges)
 # BUILD THE CASE
 # ══════════════════════════════════════════
 
-TOTAL_HEIGHT = FLOOR_THICKNESS + WALL_HEIGHT
-
+# 1. Base Profiles
 inner_wire = pcb_wire.makeOffset2D(TOLERANCE)
 outer_wire = pcb_wire.makeOffset2D(TOLERANCE + WALL_THICKNESS)
 
 inner_face = Part.Face(inner_wire)
 outer_face = Part.Face(outer_wire)
 
+# 2. Floor Solid
 floor_solid = outer_face.extrude(FreeCAD.Vector(0, 0, FLOOR_THICKNESS))
 
+# 3. Wall Solid
 wall_face = outer_face.cut(inner_face)
 wall_solid = wall_face.extrude(FreeCAD.Vector(0, 0, WALL_HEIGHT))
 wall_solid.translate(FreeCAD.Vector(0, 0, FLOOR_THICKNESS))
 
 case = floor_solid.fuse(wall_solid)
 
-# ── OUTER RIDGE for top plate snap-fit ──
-RIDGE_WIDTH = 1.2
-RIDGE_HEIGHT = 2.0
-
+# 4. Outer Ridge for Top Plate Snap-Fit
 ridge_z = FLOOR_THICKNESS + WALL_HEIGHT
-
 ridge_inner_wire = pcb_wire.makeOffset2D(TOLERANCE + WALL_THICKNESS - RIDGE_WIDTH)
 ridge_inner_face = Part.Face(ridge_inner_wire)
 
@@ -120,36 +139,32 @@ ridge_solid.translate(FreeCAD.Vector(0, 0, ridge_z))
 
 case = case.fuse(ridge_solid)
 
-# ── STANDOFFS with M2 heat-set insert holes ──
-# M2 heat-set inserts: 3mm long, 3.5mm OD
-# Screws come from the top plate down into the inserts
-STANDOFF_HEIGHT = 3.5  # mm above floor (battery space)
-STANDOFF_OUTER_R = 3.5  # mm (5mm diameter post)
-INSERT_HOLE_D = 3.2  # mm - slightly under 3.5mm OD for press-fit
-INSERT_HOLE_DEPTH = 3.0  # mm - insert length
-
-MOUNTING_HOLES = [
-    (148.971, 69.85),
-    (185.42, 106.426),
-    (123.952, 104.14),
-    (167.005, 110.363),
-    (171.323, 96.901),
-    (95.0, 83.82),
-    (95.0, 66.802),
-]
+# 5. Standoffs with M2 Heat-Set Insert Holes
+posts = []
+holes = []
 
 for mx, my in MOUNTING_HOLES:
+    # Setup Z-axis heights
     pos = FreeCAD.Vector(mx, -my, FLOOR_THICKNESS)
-    # Solid standoff post (no through hole)
-    post = Part.makeCylinder(STANDOFF_OUTER_R, STANDOFF_HEIGHT, pos)
-    case = case.fuse(post)
-    # Blind hole from top for heat-set insert
     insert_z = FLOOR_THICKNESS + STANDOFF_HEIGHT - INSERT_HOLE_DEPTH
+
+    # Create solid standoff post
+    post = Part.makeCylinder(STANDOFF_OUTER_R, STANDOFF_HEIGHT, pos)
+    posts.append(post)
+
+    # Create blind hole shape
     hole = Part.makeCylinder(
         INSERT_HOLE_D / 2.0, INSERT_HOLE_DEPTH + 0.01, FreeCAD.Vector(mx, -my, insert_z)
     )
-    case = case.cut(hole)
+    holes.append(hole)
 
+# Fuse all posts and cut all holes at once for better performance
+if posts:
+    case = case.fuse(Part.Compound(posts))
+if holes:
+    case = case.cut(Part.Compound(holes))
+
+# Clean up visual lines
 case = case.removeSplitter()
 
 # ══════════════════════════════════════════
@@ -160,19 +175,20 @@ part = doc.addObject("Part::Feature", "ChocofiBottomCase")
 part.Shape = case
 doc.recompute()
 
+# Save step file
 step_path = os.path.expanduser("~/chocofi_simple_case.step")
 Part.export([part], step_path)
 print(f"STEP -> {step_path}")
 
+# Save STL file
 try:
-    import Mesh
-
     stl_path = os.path.expanduser("~/chocofi_simple_case.stl")
     Mesh.export([part], stl_path)
     print(f"STL  -> {stl_path}")
 except Exception as e:
     print(f"STL export failed: {e}")
 
+# Print Bounding Box details
 bb = case.BoundBox
 print(f"\nDone! Case: {bb.XLength:.1f} x {bb.YLength:.1f} x {bb.ZLength:.1f} mm")
 print(f"  Floor: {FLOOR_THICKNESS} mm")
