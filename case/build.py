@@ -28,14 +28,27 @@ import helpers
 import pcb_model
 import top_case_model
 import bottom_case_model
+import nice_nano_model
+import nice_view_model
 
-for mod in [params, pcb_data, helpers, pcb_model, top_case_model, bottom_case_model]:
+for mod in [
+    params,
+    pcb_data,
+    helpers,
+    pcb_model,
+    top_case_model,
+    bottom_case_model,
+    nice_nano_model,
+    nice_view_model,
+]:
     importlib.reload(mod)
 
 import FreeCAD
 import Part
 
 from pcb_model import build_pcb
+from nice_nano_model import import_nice_nano
+from nice_view_model import build_nice_view
 from top_case_model import build_top_case
 from bottom_case_model import build_bottom_case
 
@@ -47,10 +60,11 @@ parts = [
     ("Chocofi_PCB", build_pcb, (0.10, 0.55, 0.15), 0),
     ("Chocofi_TopCase", build_top_case, (0.30, 0.50, 0.85), 30),
     ("Chocofi_BottomCase", build_bottom_case, (0.85, 0.50, 0.20), 30),
+    ("Nice_View", build_nice_view, (0.85, 0.90, 0.20), 0),
 ]
 
 for i, (name, builder, color, transparency) in enumerate(parts, 1):
-    print(f"  [{i}/3] {name}...")
+    print(f"  [{i}/4] {name}...")
     obj = doc.addObject("Part::Feature", name)
     obj.Shape = builder()
     try:
@@ -58,6 +72,8 @@ for i, (name, builder, color, transparency) in enumerate(parts, 1):
         obj.ViewObject.Transparency = transparency
     except Exception:
         pass  # headless mode
+
+import_nice_nano(doc)
 
 doc.recompute()
 
@@ -70,5 +86,6 @@ for obj in doc.Objects:
 
 # ── Summary ──
 bb = doc.getObject("Chocofi_BottomCase").Shape.BoundBox
+
 print(f"\nDone! 3 objects in document 'ChocofiCase'")
 print(f"  Bottom case bbox: {bb.XLength:.1f} x {bb.YLength:.1f} x {bb.ZLength:.1f} mm")
