@@ -1,0 +1,318 @@
+(footprint "C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
+	(tags "capacitor handsolder")
+	(property "Reference" "REF**"
+		(at 0 -1.68 0)
+		(layer "F.SilkS")
+		(uuid "1c7bcc74-9a1f-4dd0-99eb-cdadf110e39c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(at 0 1.68 0)
+		(layer "F.Fab")
+		(uuid "528d60d8-af8b-43ed-a750-7cbba0eae224")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6d6f8990-e272-4caa-a37e-8d7da11b94ee")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b5cb53ae-a866-4c6c-aa65-f7d8239b5582")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.261252 -0.735)
+		(end 0.261252 -0.735)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ab4990e7-478e-4def-aa21-3ea6e1c0c48f")
+	)
+	(fp_line
+		(start -0.261252 0.735)
+		(end 0.261252 0.735)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "19ea350b-d1bc-4815-abf8-cd4c0d640275")
+	)
+	(fp_line
+		(start 0.261252 -0.735)
+		(end -0.261252 -0.735)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "496a7528-7d51-40b9-90c0-353e6ad8db05")
+	)
+	(fp_line
+		(start 0.261252 0.735)
+		(end -0.261252 0.735)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "B.SilkS")
+		(uuid "f25b3055-f0c5-429f-ba99-6df42f16ddca")
+	)
+	(fp_line
+		(start -1.88 -0.98)
+		(end -1.88 0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "13fbdc12-9267-41b5-99a7-0e3227257b11")
+	)
+	(fp_line
+		(start -1.88 0.98)
+		(end 1.88 0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "2f3d53d1-f0e5-431d-830f-867deda9eb94")
+	)
+	(fp_line
+		(start 1.88 -0.98)
+		(end -1.88 -0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "e17dade6-17dc-42eb-8da5-28eee94fec41")
+	)
+	(fp_line
+		(start 1.88 0.98)
+		(end 1.88 -0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "B.CrtYd")
+		(uuid "5499156e-408b-4a6c-a5ca-67de26216496")
+	)
+	(fp_line
+		(start -1.88 -0.98)
+		(end 1.88 -0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4ab746e6-7378-4ba3-8daf-ec49f28dd8a3")
+	)
+	(fp_line
+		(start -1.88 0.98)
+		(end -1.88 -0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "275717f6-5665-4967-a6ef-eadef2217b68")
+	)
+	(fp_line
+		(start 1.88 -0.98)
+		(end 1.88 0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4335eadc-965e-4e61-925e-9628d1162ddd")
+	)
+	(fp_line
+		(start 1.88 0.98)
+		(end -1.88 0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e045421e-92c7-4b58-8937-b1896c9953ae")
+	)
+	(fp_line
+		(start -1 -0.625)
+		(end -1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+		(uuid "f59f8c37-6069-48d8-bbee-4ff0474d30a4")
+	)
+	(fp_line
+		(start -1 0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+		(uuid "a7927cb7-b328-490e-8d80-a492c76cb1b4")
+	)
+	(fp_line
+		(start 1 -0.625)
+		(end -1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+		(uuid "46a44272-7d18-4d5e-9e4d-352311bc850f")
+	)
+	(fp_line
+		(start 1 0.625)
+		(end 1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "B.Fab")
+		(uuid "37e99516-8876-4d75-979f-aa6b55959d72")
+	)
+	(fp_line
+		(start -1 -0.625)
+		(end 1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dcb4099a-74dd-45be-a965-81ac53b6af14")
+	)
+	(fp_line
+		(start -1 0.625)
+		(end -1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "66cff391-bf2a-4bd2-9d8a-d7265c3104ad")
+	)
+	(fp_line
+		(start 1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7a4027bd-d3f7-414e-b2b5-3a6244ac2d40")
+	)
+	(fp_line
+		(start 1 0.625)
+		(end -1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c8243279-9f0b-4a62-9bf9-fe858b4c6730")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "B.Fab")
+		(uuid "090699e8-16a6-4536-b759-085402585778")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+			(justify mirror)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "f56f67e3-47b8-43cb-8a10-5f35d9c21c34")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.0375 0)
+		(size 1.175 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.212766)
+		(uuid "b1e499e0-4339-4187-8804-bb696ad63dfe")
+	)
+	(pad "1" smd roundrect
+		(at -1.0375 0)
+		(size 1.175 1.45)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(roundrect_rratio 0.212766)
+		(uuid "4a1f6a14-f08d-47ac-88f7-43be1043a945")
+	)
+	(pad "2" smd roundrect
+		(at 1.0375 0)
+		(size 1.175 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.212766)
+		(uuid "c44093a1-f367-492c-8247-315830f8d6fe")
+	)
+	(pad "2" smd roundrect
+		(at 1.0375 0)
+		(size 1.175 1.45)
+		(layers "B.Cu" "B.Mask" "B.Paste")
+		(roundrect_rratio 0.212766)
+		(uuid "cfe3c6b9-38a4-4c29-86ca-ab0327db362e")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
