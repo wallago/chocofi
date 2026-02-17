@@ -4,6 +4,10 @@
     col-offset = <5>;
 };
 
+&led_strip {
+    chain-length = <2>;
+};
+
 &kscan0 {
     row-gpios
     = <&pro_micro 4 GPIO_ACTIVE_HIGH> // Higher Column
