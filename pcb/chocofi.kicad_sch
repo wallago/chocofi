@@ -9089,7 +9089,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_SH_BM02B-SRSS-TB_1x02-1MP_P1.00mm_Vertical"
+		(property "Footprint" "Library:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal_Custom"
 			(at 218.44 31.75 0)
 			(effects
 				(font
@@ -9913,7 +9913,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_SH_BM02B-SRSS-TB_1x02-1MP_P1.00mm_Vertical"
+		(property "Footprint" "Library:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal_Custom"
 			(at 257.81 31.75 0)
 			(effects
 				(font
@@ -10728,7 +10728,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f648daf6-ba4a-4aea-9aed-a30d7bb4d93e")
-		(property "Reference" "C_BAT"
+		(property "Reference" "C_BAT1"
 			(at 149.86 31.7501 0)
 			(effects
 				(font
@@ -10782,7 +10782,7 @@
 		(instances
 			(project "chocofi"
 				(path "/2e32ab7e-c9fb-4e05-9497-0d2aa8a6c3fa"
-					(reference "C_BAT")
+					(reference "C_BAT1")
 					(unit 1)
 				)
 			)
