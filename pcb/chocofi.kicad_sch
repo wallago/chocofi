@@ -4152,7 +4152,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 33.02 30.48 0)
 			(effects
 				(font
@@ -4217,7 +4217,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 40.64 34.29 0)
 			(effects
 				(font
@@ -4283,7 +4283,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 50.8 30.48 0)
 			(effects
 				(font
@@ -4348,7 +4348,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 68.58 30.48 0)
 			(effects
 				(font
@@ -4413,7 +4413,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 86.36 30.48 0)
 			(effects
 				(font
@@ -4478,7 +4478,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 104.14 30.48 0)
 			(effects
 				(font
@@ -4543,7 +4543,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 33.02 45.72 0)
 			(effects
 				(font
@@ -4608,7 +4608,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 50.8 45.72 0)
 			(effects
 				(font
@@ -4673,7 +4673,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 68.58 45.72 0)
 			(effects
 				(font
@@ -4738,7 +4738,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 86.36 45.72 0)
 			(effects
 				(font
@@ -4803,7 +4803,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 104.14 45.72 0)
 			(effects
 				(font
@@ -4868,7 +4868,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 33.02 60.96 0)
 			(effects
 				(font
@@ -4933,7 +4933,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 50.8 60.96 0)
 			(effects
 				(font
@@ -4998,7 +4998,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 68.58 60.96 0)
 			(effects
 				(font
@@ -5063,7 +5063,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 86.36 60.96 0)
 			(effects
 				(font
@@ -5128,7 +5128,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 104.14 60.96 0)
 			(effects
 				(font
@@ -5193,7 +5193,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 86.36 76.2 0)
 			(effects
 				(font
@@ -5258,7 +5258,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 104.14 76.2 0)
 			(effects
 				(font
@@ -5323,7 +5323,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_Choc_V1V2_Plated"
+		(property "Footprint" "chocofi:SW_Hotswap_Kailh_Choc_V1V2_Plated"
 			(at 68.58 76.2 0)
 			(effects
 				(font
@@ -5584,7 +5584,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 301.9552 120.65 0)
 			(effects
 				(font
@@ -5651,7 +5651,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 256.54 106.68 0)
 			(effects
 				(font
@@ -5726,7 +5726,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 278.13 106.68 0)
 			(effects
 				(font
@@ -5802,7 +5802,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 276.86 135.89 0)
 			(effects
 				(font
@@ -5878,7 +5878,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 298.45 194.31 0)
 			(effects
 				(font
@@ -5956,7 +5956,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 256.2352 91.44 0)
 			(effects
 				(font
@@ -6023,7 +6023,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 76.2 80.01 0)
 			(effects
 				(font
@@ -6092,7 +6092,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 277.8252 149.86 0)
 			(effects
 				(font
@@ -6159,7 +6159,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 93.98 80.01 0)
 			(effects
 				(font
@@ -6356,7 +6356,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 346.4052 91.44 0)
 			(effects
 				(font
@@ -6426,7 +6426,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 346.4052 149.86 0)
 			(effects
 				(font
@@ -6496,7 +6496,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 256.2352 149.86 0)
 			(effects
 				(font
@@ -6628,7 +6628,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 300.99 165.1 0)
 			(effects
 				(font
@@ -6704,7 +6704,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 342.9 194.31 0)
 			(effects
 				(font
@@ -6843,7 +6843,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 323.85 106.68 0)
 			(effects
 				(font
@@ -6982,7 +6982,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 40.64 49.53 0)
 			(effects
 				(font
@@ -7049,7 +7049,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 254 135.89 0)
 			(effects
 				(font
@@ -7124,7 +7124,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 58.42 64.77 0)
 			(effects
 				(font
@@ -7192,7 +7192,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:nice_nano"
+		(property "Footprint" "chocofi:nice_nano"
 			(at 365.76 105.41 90)
 			(effects
 				(font
@@ -7392,7 +7392,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 346.4052 120.65 0)
 			(effects
 				(font
@@ -7459,7 +7459,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 111.76 34.29 0)
 			(effects
 				(font
@@ -7525,7 +7525,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 93.98 34.29 0)
 			(effects
 				(font
@@ -7591,7 +7591,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 278.13 165.1 0)
 			(effects
 				(font
@@ -7794,7 +7794,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 256.54 165.1 0)
 			(effects
 				(font
@@ -7872,7 +7872,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 345.1352 179.07 0)
 			(effects
 				(font
@@ -7939,7 +7939,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 76.2 34.29 0)
 			(effects
 				(font
@@ -8005,7 +8005,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 111.76 64.77 0)
 			(effects
 				(font
@@ -8328,7 +8328,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 76.2 49.53 0)
 			(effects
 				(font
@@ -8394,7 +8394,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 76.2 64.77 0)
 			(effects
 				(font
@@ -8460,7 +8460,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 111.76 80.01 0)
 			(effects
 				(font
@@ -8527,7 +8527,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 344.17 135.89 0)
 			(effects
 				(font
@@ -8669,7 +8669,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 277.8252 91.44 0)
 			(effects
 				(font
@@ -8804,7 +8804,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 323.5452 91.44 0)
 			(effects
 				(font
@@ -8871,7 +8871,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 300.99 106.68 0)
 			(effects
 				(font
@@ -9011,7 +9011,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 323.85 165.1 0)
 			(effects
 				(font
@@ -9089,7 +9089,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Library:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal_Custom"
+		(property "Footprint" "chocofi:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal"
 			(at 218.44 31.75 0)
 			(effects
 				(font
@@ -9159,7 +9159,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 300.6852 149.86 0)
 			(effects
 				(font
@@ -9226,7 +9226,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 40.64 64.77 0)
 			(effects
 				(font
@@ -9357,7 +9357,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 321.31 194.31 0)
 			(effects
 				(font
@@ -9435,7 +9435,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 323.5452 179.07 0)
 			(effects
 				(font
@@ -9566,7 +9566,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 346.71 165.1 0)
 			(effects
 				(font
@@ -9641,7 +9641,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 58.42 49.53 0)
 			(effects
 				(font
@@ -9774,7 +9774,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 324.8152 120.65 0)
 			(effects
 				(font
@@ -9844,7 +9844,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 323.5452 149.86 0)
 			(effects
 				(font
@@ -9913,7 +9913,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Library:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal_Custom"
+		(property "Footprint" "chocofi:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal"
 			(at 257.81 31.75 0)
 			(effects
 				(font
@@ -9980,7 +9980,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 93.98 49.53 0)
 			(effects
 				(font
@@ -10110,7 +10110,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 58.42 34.29 0)
 			(effects
 				(font
@@ -10179,7 +10179,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 256.2352 120.65 0)
 			(effects
 				(font
@@ -10247,7 +10247,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 322.58 135.89 0)
 			(effects
 				(font
@@ -10325,7 +10325,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 279.0952 120.65 0)
 			(effects
 				(font
@@ -10392,7 +10392,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 346.71 106.68 0)
 			(effects
 				(font
@@ -10470,7 +10470,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 300.6852 91.44 0)
 			(effects
 				(font
@@ -10603,7 +10603,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kbd:YS-SK6812MINI-E"
+		(property "Footprint" "chocofi:YS-SK6812MINI-E"
 			(at 299.72 135.89 0)
 			(effects
 				(font
@@ -10746,7 +10746,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 152.7048 26.67 0)
 			(effects
 				(font
@@ -10816,7 +10816,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
+		(property "Footprint" "chocofi:PinHeader_1x05_P2.54mm_Vertical"
 			(at 255.27 52.07 0)
 			(effects
 				(font
@@ -10898,7 +10898,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Library:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder_Custom"
+		(property "Footprint" "chocofi:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 300.6852 179.07 0)
 			(effects
 				(font
@@ -10965,7 +10965,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 93.98 64.77 0)
 			(effects
 				(font
@@ -11031,7 +11031,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:D_SOD-323_HandSoldering_Custom"
+		(property "Footprint" "chocofi:D_SOD-323_HandSoldering"
 			(at 111.76 49.53 0)
 			(effects
 				(font
