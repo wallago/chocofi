@@ -12,6 +12,7 @@
 		(date "2018-12-26")
 		(rev "2.1")
 		(company "foostan")
+		(comment 4 "AISLER Project ID: TMWKXESL")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -102,7 +103,6 @@
 			(dielectric_constraints no)
 		)
 		(pad_to_mask_clearance 0.2)
-		(solder_mask_min_width 0.1)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
 		(aux_axis_origin 145.73 12.66)
@@ -2435,7 +2435,7 @@
 			(net 10 "col3")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "dc380008-633d-4b25-b201-9d17419b54ed")
+			(uuid "d1700753-37b2-4bdb-abd2-804ad36231eb")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -2453,7 +2453,7 @@
 			(net 37 "Net-(D11-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "1d9654bb-f426-4b33-a76e-5038d3cf2f1c")
+			(uuid "c7b45764-edbe-4498-aa64-d3fb2849bd4d")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -3021,7 +3021,7 @@
 			(net 1 "row0")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "cf5dacf0-ea04-4003-99e0-288a1181fb44")
+			(uuid "8380cf8b-c346-41aa-88fc-08a78743134a")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -3041,7 +3041,7 @@
 			(net 40 "Net-(D15-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "2d120114-a19f-40ab-b692-d5330ab50d86")
+			(uuid "a3e177c3-992c-47c2-81c7-5ff60636b834")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -5267,7 +5267,7 @@
 			(net 8 "col1")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "71c4c8dd-5d31-4f31-9816-4e107671c3dc")
+			(uuid "cb09b32e-ee49-4235-a22b-a98d585e40b8")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -5285,7 +5285,7 @@
 			(net 33 "Net-(D6-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "cc9bd4b7-ae8c-4c43-a6d5-428fb363bf31")
+			(uuid "b0f71ca8-de8b-4187-b896-98cf815b0850")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -5970,7 +5970,7 @@
 			(net 5 "GND")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "bc14d6e8-fcdc-4d52-b2fd-2ba78450f1f5")
+			(uuid "ff863c30-2ee4-4472-8b1f-7c93552d654b")
 		)
 		(pad "2" smd roundrect
 			(at -0.5 -2)
@@ -5990,7 +5990,7 @@
 			(net 14 "BAT_switch")
 			(pinfunction "Pin_2")
 			(pintype "passive")
-			(uuid "60a0e84d-6a25-4d97-b3f9-f70356aa7717")
+			(uuid "ef62d799-a109-41a6-a7cb-6ecb47d68e07")
 		)
 		(pad "MP" smd roundrect
 			(at -1.8 1.875)
@@ -6004,21 +6004,21 @@
 			(size 1.2 1.8)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.208333)
-			(uuid "bbc44cb0-c815-40bf-8b58-7784af4563f8")
+			(uuid "1bd80f74-c064-4981-ba51-b068104dff45")
 		)
 		(pad "MP" smd roundrect
 			(at 1.8 1.875)
 			(size 1.2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(uuid "bbc44cb0-c815-40bf-8b58-7784af4563f8")
+			(uuid "b10a588e-ca35-4459-8b99-e85500d06470")
 		)
 		(pad "MP" smd roundrect
 			(at 1.8 1.875)
 			(size 1.2 1.8)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.208333)
-			(uuid "bbc44cb0-c815-40bf-8b58-7784af4563f8")
+			(uuid "d3c3e442-29ad-46bd-960f-628a383e309b")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_JST.3dshapes/JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal.step"
@@ -6759,7 +6759,7 @@
 			(net 3 "row2")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "5031cdb5-6900-4801-9096-276815d9dc7d")
+			(uuid "ef4f8ea4-785b-4c78-9fc3-da25577d360a")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -6779,7 +6779,7 @@
 			(net 35 "Net-(D9-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "2cf8ef74-1df2-4bf7-a4d1-c64d5af2a240")
+			(uuid "fdc12407-1e92-4c90-bbb2-aa7f67232281")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -7234,7 +7234,7 @@
 			(net 3 "row2")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "26d63452-9f08-49e5-bbf1-cab27a4f569f")
+			(uuid "17daee4f-c7de-402e-bda7-28599739d57b")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -7254,7 +7254,7 @@
 			(net 30 "Net-(D3-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "250d80ee-6865-4d79-a1c7-cd5ec45ac44d")
+			(uuid "a65524d3-4627-4bd9-a07e-9820fc3a89fb")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -7810,7 +7810,7 @@
 			(net 4 "row3")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "d151747d-c38a-4a39-9822-8ef8d7212acc")
+			(uuid "13ac88fb-4ea1-4ed6-a7f6-c2d77384c853")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 330)
@@ -7830,7 +7830,7 @@
 			(net 43 "Net-(D18-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "9d9cea0e-51da-4cdc-9260-2b11ee652ad1")
+			(uuid "a5802019-8c4a-49d7-950a-50c0916eacc9")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -8141,7 +8141,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "b0297820-5853-4aca-863e-88fe4d3175b8")
+			(uuid "85fb6535-3424-4164-989c-d54cd36bea11")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -8159,7 +8159,7 @@
 			(roundrect_rratio 0.212766)
 			(net 68 "Net-(LED17-VDD)")
 			(pintype "passive")
-			(uuid "bdb85887-ff31-4167-b2b4-743b1e2e1d59")
+			(uuid "18ce47dc-ec82-4775-b48a-dabf63b29fa7")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -8470,7 +8470,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "319e9a00-2061-411b-b288-026b045251bf")
+			(uuid "0491239f-f63b-4860-b7ab-e06f88b4d62e")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -8488,7 +8488,7 @@
 			(roundrect_rratio 0.212766)
 			(net 56 "Net-(LED5-VDD)")
 			(pintype "passive")
-			(uuid "f27d8545-2327-49f1-9ef1-ec35085801d3")
+			(uuid "ab9b7169-0489-4c59-9a84-7107a3407ecb")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -8834,7 +8834,7 @@
 			(net 21 "Net-(LED4-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "79bec535-d39a-4ddd-9e1d-5d5833387236")
+			(uuid "56bc8135-26aa-44e8-bf78-a5a67da719af")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -8852,7 +8852,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "f8c4c5eb-9427-4beb-8901-aa9e5126552f")
+			(uuid "e83b6e92-0651-4801-b93a-eca69b664ade")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -8870,7 +8870,7 @@
 			(net 20 "Net-(LED3-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "d75249a3-1dda-4296-84d0-cc02c96f557a")
+			(uuid "8cc44385-e100-4dde-a472-7e8a93b70d9c")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -8888,7 +8888,7 @@
 			(net 55 "Net-(LED4-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "8dbbd7c3-9ae1-4a03-9863-d5882391ee83")
+			(uuid "52169278-9762-4427-9003-371355dc81b5")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -9245,7 +9245,7 @@
 			(net 22 "Net-(LED10-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "2b28cf03-4155-4c00-b734-2972fab44839")
+			(uuid "f0fa8a43-83c4-45a5-9cee-4f99657f07e0")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -9263,7 +9263,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "8ddcd331-71ec-4a93-8840-d60b1666196f")
+			(uuid "75188092-1cdf-47d8-b0c6-69cae8f38215")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -9281,7 +9281,7 @@
 			(net 23 "Net-(LED10-DIN)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "76441fb6-2953-4ac6-ba3c-bf25d54d31c2")
+			(uuid "68914503-b0e3-4191-b84d-520ec145ba14")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -9299,7 +9299,7 @@
 			(net 61 "Net-(LED10-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "ccd18eb3-ef8b-453f-8754-f56a78ec2d8f")
+			(uuid "40d3bad0-79f4-4e34-8e67-d6a5820cc5e0")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -9765,7 +9765,7 @@
 			(net 1 "row0")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "6b0e57d4-7665-4de9-a270-9b9ce670ed52")
+			(uuid "fa5d287f-51fb-4c2f-9a42-ed7bba272c8b")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -9785,7 +9785,7 @@
 			(net 37 "Net-(D11-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "c29331dd-633d-4468-82d6-235721daac51")
+			(uuid "bf14de8f-a522-4cb2-97a9-47078356cf8c")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -10131,7 +10131,7 @@
 			(net 73 "Net-(LED8-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "756752d2-2d3c-42be-abc9-8df8545b96ab")
+			(uuid "000269c2-0b6f-41ff-a5bc-72e494fcbf3c")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -10149,7 +10149,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "bfbc2ad3-971c-4378-924d-60366b151be5")
+			(uuid "31031088-7eec-4db7-a572-64cda4bc9d84")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -10167,7 +10167,7 @@
 			(net 72 "Net-(LED7-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "f439dc94-98bf-4078-ad3b-778aba7d391b")
+			(uuid "5b46f77e-7226-40de-9b4f-d4a86191a6ba")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -10185,7 +10185,7 @@
 			(net 59 "Net-(LED8-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "b8f35504-00dd-4d96-a243-8afd8a774fd6")
+			(uuid "3df54e74-6a03-44a3-9176-0b21245ee618")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -10808,7 +10808,7 @@
 			(uuid "2e4cff0a-a154-4603-ab5a-d215d5d7a9d2")
 		)
 		(fp_line
-			(start -2.545999 7.282)
+			(start -2.545998 7.282)
 			(end -2.633 6.844)
 			(stroke
 				(width 0.12)
@@ -10819,7 +10819,7 @@
 		)
 		(fp_line
 			(start -2.546 7.504)
-			(end -2.545999 7.282)
+			(end -2.545998 7.282)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -11009,7 +11009,7 @@
 		)
 		(fp_line
 			(start 2.451999 7.523)
-			(end 1.522999 8.452)
+			(end 1.522998 8.452)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -11018,7 +11018,7 @@
 			(uuid "b6271d84-c728-450e-8dde-91012abfbafe")
 		)
 		(fp_line
-			(start 1.522999 8.452)
+			(start 1.522998 8.452)
 			(end -1.278 8.452)
 			(stroke
 				(width 0.05)
@@ -12422,10 +12422,10 @@
 			(net 10 "col3")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "2ec23607-5432-4a19-9b4e-ec7d5e5c892d")
+			(uuid "1914dcb0-b52f-4a90-bff9-a51d6d810663")
 		)
 		(pad "2" smd rect
-			(at -8.275 3.800001 165)
+			(at -8.275 3.800002 165)
 			(size 2.6 2.6)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net 39 "Net-(D14-A)")
@@ -12440,7 +12440,7 @@
 			(net 39 "Net-(D14-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "4bd67b3e-5987-4f07-b4cb-e56aea3407d9")
+			(uuid "a98113b8-e926-4465-ac50-8022778c66d8")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -12798,7 +12798,7 @@
 			(net 70 "Net-(LED5-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "2972bbb9-aae2-40b1-865c-11709029784a")
+			(uuid "da5c7b20-7721-4c84-bd8a-e436bd2e53a0")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -12816,7 +12816,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "cd54f9f6-d5db-4b24-8ad1-5727fcc752d4")
+			(uuid "d676acfc-6236-413c-8966-af584f9064fb")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -12834,7 +12834,7 @@
 			(net 21 "Net-(LED4-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "d7aced60-176c-4402-b182-1bb634fa45be")
+			(uuid "6c62a918-712c-4a3a-ac0f-ab1c6ed89795")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -12852,7 +12852,7 @@
 			(net 56 "Net-(LED5-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "dfdc5d23-d8dc-485e-b225-5f9ba5c87507")
+			(uuid "f362a563-5f57-43ac-9b03-bd0392ce1165")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -13275,7 +13275,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "c0835e6e-fa2c-4238-a882-1e1f5d7015ca")
+			(uuid "5da201a1-3895-472b-80cb-c252cef19829")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -13293,7 +13293,7 @@
 			(roundrect_rratio 0.212766)
 			(net 52 "Net-(LED1-VDD)")
 			(pintype "passive")
-			(uuid "a363ccfb-feb4-483b-b46c-a614bb95d9c7")
+			(uuid "4c354326-5ddf-41ad-aae6-99da3fc77dfa")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -13604,7 +13604,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "84b826f1-f038-4a70-9939-18cd3fd297ae")
+			(uuid "59d5b94d-76da-480e-95f7-aec58dbe7246")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -13622,7 +13622,7 @@
 			(roundrect_rratio 0.212766)
 			(net 53 "Net-(LED2-VDD)")
 			(pintype "passive")
-			(uuid "29b0aa9a-8b3c-4cc3-a20f-a7b0a795647d")
+			(uuid "ba188cd0-a7de-465c-aa67-e01514c38533")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -14077,7 +14077,7 @@
 			(net 1 "row0")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "d274c3cb-142d-44c2-a526-13a64e953835")
+			(uuid "3efbc5d6-aa06-4861-aac4-30c8e1f53dab")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -14097,7 +14097,7 @@
 			(net 15 "Net-(D1-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "8928e952-2393-41de-9abd-13e7a8fba5a5")
+			(uuid "400f1cf1-14c8-4532-a6ac-56854ee72df5")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -14408,7 +14408,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "a8665128-0fab-4889-89f5-062e0031d36e")
+			(uuid "6b145248-9643-4e60-8a7e-5d64aeb1e07a")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -14426,7 +14426,7 @@
 			(roundrect_rratio 0.212766)
 			(net 63 "Net-(LED12-VDD)")
 			(pintype "passive")
-			(uuid "3e02c52f-cbb0-45b7-9cdf-0b2c9f44c07e")
+			(uuid "22f2ca03-8566-4229-8d21-6d476713dcd3")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -14772,7 +14772,7 @@
 			(net 76 "Net-(LED17-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "d3056de7-71da-4b0c-9ff3-0bbace239d54")
+			(uuid "45e57915-2f21-487b-99e3-4281032559c1")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -14790,7 +14790,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "210cc747-99ec-4a18-996a-85e0305203f1")
+			(uuid "806c2a25-f435-4e40-bca2-4373c214bd98")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -14808,7 +14808,7 @@
 			(net 27 "Net-(LED16-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "f50a8614-aca1-4557-b605-006b384e70b8")
+			(uuid "730d026c-b49f-474a-86d3-ea6e1081ce5f")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -14826,7 +14826,7 @@
 			(net 68 "Net-(LED17-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "1c1fc439-d66a-435a-8401-d3c943a5d7ba")
+			(uuid "b6bc9b5d-9926-4631-b459-60ca2b865fdc")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -17063,7 +17063,7 @@
 			(net 9 "col2")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "7ed10624-92d4-4c59-a394-0f5aa6ff920a")
+			(uuid "ec8e2eea-20e1-487b-b98f-fb76b2f23d31")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8 180)
@@ -17081,7 +17081,7 @@
 			(net 36 "Net-(D10-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "2bdf6c94-f5e7-496b-8d6a-f5a80ec3f5f3")
+			(uuid "34546a39-ee76-499e-a601-ebfd2c69ab7d")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -17439,7 +17439,7 @@
 			(net 74 "Net-(LED14-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "216f8732-7c8e-4c20-b8c2-d6637e302611")
+			(uuid "147dc42f-c5be-414d-8af5-629b25101aa2")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.699999 345)
@@ -17457,7 +17457,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "bd805d3c-bf2f-4d5f-8546-90b883de9f6f")
+			(uuid "dde0c81d-09dd-4a30-a8e8-e899a25e722f")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7 345)
@@ -17475,7 +17475,7 @@
 			(net 26 "Net-(LED13-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "d9529c83-e889-4520-bbdd-5f9bf79e4e61")
+			(uuid "1693159f-ca82-422b-a4fb-64e9e9462920")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7 345)
@@ -17493,7 +17493,7 @@
 			(net 65 "Net-(LED14-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "31d60111-056e-4927-921c-43333e5b6004")
+			(uuid "df0b3570-94d6-4f8f-b338-f423f351e6bb")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -17815,7 +17815,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "aadb2272-2037-48a6-ad30-2e730ed4eefb")
+			(uuid "01f787a9-ec8c-499b-8ae7-f9254c9fadda")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -17833,7 +17833,7 @@
 			(roundrect_rratio 0.212766)
 			(net 62 "Net-(LED11-VDD)")
 			(pintype "passive")
-			(uuid "eff5da12-bf94-4d72-8fd1-aabbacd078d0")
+			(uuid "816bc2a9-462d-4258-9261-00fb951523e0")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -19205,7 +19205,7 @@
 			(net 4 "row3")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "6c6c0520-68ae-428c-aad7-0de82dfcdd95")
+			(uuid "bf40b799-ee4a-4750-9970-5d56df376fc0")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -19225,7 +19225,7 @@
 			(net 36 "Net-(D10-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "c5bb0d42-7306-42c1-a8e7-087801d3a2cf")
+			(uuid "befc2266-c5a8-482b-94e3-b506a75666ef")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -21451,7 +21451,7 @@
 			(net 10 "col3")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "ba58fe70-12df-45d6-8cdd-626f0dfac8d4")
+			(uuid "0857f2a1-dfd9-4494-8e6f-a2bcd8103c79")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -21469,7 +21469,7 @@
 			(net 17 "Net-(D13-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "3bc0980c-3082-461c-b237-b07004bc528a")
+			(uuid "2aa3baa8-a299-4adf-beb2-64712d3d780b")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -21827,7 +21827,7 @@
 			(net 23 "Net-(LED10-DIN)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "435cb041-456e-46ed-9214-97501f3d9025")
+			(uuid "119ab2d0-7786-43f7-ae3b-2b6d79db8a4a")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -21845,7 +21845,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "100e9acd-7739-47e8-9b76-49ab31c61953")
+			(uuid "90868fbe-e825-4cac-b0af-71d67f0ed40d")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -21863,7 +21863,7 @@
 			(net 73 "Net-(LED8-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "7c8fe111-c0be-456b-9b59-9a2b6d3889b9")
+			(uuid "40c3a2b8-c1c1-410c-9123-c22a2bab439a")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -21881,7 +21881,7 @@
 			(net 60 "Net-(LED9-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "296edc8b-f14e-42a1-bda9-3ad1249a51c7")
+			(uuid "2a3e9f6a-6e5f-4d3b-9ac9-62fdb7aca841")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -22347,7 +22347,7 @@
 			(net 2 "row1")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "cb6981b1-db4d-42e8-bd73-e2950931a089")
+			(uuid "72629951-38ba-435f-9390-1fbef914370e")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -22367,7 +22367,7 @@
 			(net 32 "Net-(D5-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "2e9e8033-4046-46fe-b41c-60af7bef6eba")
+			(uuid "65c8c97b-788e-4266-bdc4-71dc45ebebdb")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -24593,7 +24593,7 @@
 			(net 11 "col4")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "39c8a2f5-2604-4385-9c15-08577656502f")
+			(uuid "400621fb-c697-49b7-8ab0-2e8eed24268c")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -24611,7 +24611,7 @@
 			(net 41 "Net-(D16-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "37e90152-1f5e-4e28-9ea9-e9306cb6d7a1")
+			(uuid "91cf48d5-824b-43e3-a649-5047e21a4dba")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -24969,7 +24969,7 @@
 			(net 18 "Net-(LED1-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "c41636ef-6a10-4d61-aafb-d1222a11e2a5")
+			(uuid "57aa035f-965a-4ae0-a42a-eddfe3319786")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -24987,7 +24987,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "ac8ca6c9-d2b2-4c82-83e5-df3a2f311b6a")
+			(uuid "27694246-f75b-4397-9681-9bf979640a33")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -25005,7 +25005,7 @@
 			(net 12 "LED")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "70f2b91f-dd36-4978-9963-d55de213fb76")
+			(uuid "915d6dbd-49cc-4bdc-9e60-5803589219d8")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -25023,7 +25023,7 @@
 			(net 52 "Net-(LED1-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "9907fbcd-0442-4e1e-9f2b-17fa180e0266")
+			(uuid "61b6c423-b941-4d6e-b41d-df553c71e79d")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -25380,7 +25380,7 @@
 			(net 25 "Net-(LED12-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "f90530ec-007e-4fa8-9494-84ecdcd6e6f6")
+			(uuid "58f18d80-42a2-4c5e-85d6-7cc8f6c52bbe")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -25398,7 +25398,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "98d59fa7-499c-461f-a56a-44243bc4cc93")
+			(uuid "e6bfc870-dd7d-43b5-a507-f06f7e9b93f2")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -25416,7 +25416,7 @@
 			(net 24 "Net-(LED11-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "040c1e44-e35c-4549-a945-5281f0f7fb76")
+			(uuid "ee295fb2-d5ab-477c-b069-439c6a06eee5")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -25434,7 +25434,7 @@
 			(net 63 "Net-(LED12-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "087e3681-5706-4a60-8c48-546cebed9f74")
+			(uuid "c1b2c903-4557-4168-abba-861f701e82dd")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -25756,7 +25756,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "884a92c1-b1b1-439d-8d85-9e9dd3d345cf")
+			(uuid "90484b92-5c44-45e1-ab32-c4fce3d7b4b7")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -25774,7 +25774,7 @@
 			(roundrect_rratio 0.212766)
 			(net 55 "Net-(LED4-VDD)")
 			(pintype "passive")
-			(uuid "dbf61e4e-0284-4ab0-aecf-4fde844fdf61")
+			(uuid "3a823f5c-3ced-42e6-adcc-3fa4708f1b03")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -26229,7 +26229,7 @@
 			(net 2 "row1")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "7b54feb6-6e1b-4575-a209-418e18cbdab6")
+			(uuid "ddb377aa-9225-4cf2-b002-ce6420e3b6f0")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -26249,7 +26249,7 @@
 			(net 41 "Net-(D16-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "969b71f3-2960-4554-8f4a-83898bdf1b6f")
+			(uuid "c2d1e7ee-c364-49ad-b1b2-3899da8fd194")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -28475,7 +28475,7 @@
 			(net 7 "col0")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "104b4d68-221a-4381-82a2-3a9ce8512e34")
+			(uuid "581be05a-f902-4579-ac85-0c31195f3dfc")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -28493,7 +28493,7 @@
 			(net 15 "Net-(D1-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "1eadf9eb-4fa0-41b3-a00e-03e84ea159a1")
+			(uuid "e0676f0e-99f7-4d84-ae16-b1ad6d304a4b")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -28851,7 +28851,7 @@
 			(net 26 "Net-(LED13-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "48a1dad1-2c1d-4f51-9b7b-96e1a6acfe68")
+			(uuid "4e0d9e0a-994b-4ea7-b72b-2ea8e01303f9")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -28869,7 +28869,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "9b08af85-af6c-412f-a5c6-46c8aff17a43")
+			(uuid "728c7a85-d796-4746-b293-81d66c500199")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -28887,7 +28887,7 @@
 			(net 25 "Net-(LED12-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "53e60923-0016-4db8-bfd6-b493966dfb44")
+			(uuid "81825fe9-ca14-4606-9aa8-4108375a2d54")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -28905,7 +28905,7 @@
 			(net 64 "Net-(LED13-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "0ca41bd7-dcb8-46ef-932a-d9e85a3087f0")
+			(uuid "be1747bb-713f-4c46-b7ca-2d175acfd671")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -31142,7 +31142,7 @@
 			(net 9 "col2")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "29937d64-162e-4948-b872-a79df4ec3a64")
+			(uuid "23bcc471-488c-4c1d-ad90-55efb447145f")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -31160,7 +31160,7 @@
 			(net 16 "Net-(D7-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "d18479da-febc-4205-8bc9-ffa5b54b9f3a")
+			(uuid "e159486e-064c-43b3-b3b2-e5dbfa24a3f0")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -31483,7 +31483,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "58254f4d-5e7c-41b3-aeb7-cbfafcda22fd")
+			(uuid "b1b7078c-e6a9-4f9b-92f0-7b0577ef1691")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -31501,7 +31501,7 @@
 			(roundrect_rratio 0.212766)
 			(net 57 "Net-(LED6-VDD)")
 			(pintype "passive")
-			(uuid "5047186d-6e1f-46c2-9963-a4f69ee2e01e")
+			(uuid "92e2d190-dfb8-47a2-b4a3-f113f31a4449")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -33727,7 +33727,7 @@
 			(net 7 "col0")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "4acaca69-3e86-4420-b9cd-1450609dad42")
+			(uuid "e9b388d4-64db-418f-830a-dde41586a093")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -33745,7 +33745,7 @@
 			(net 29 "Net-(D2-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "0201a5b6-d738-4816-87c6-1ca7ea8cb1b8")
+			(uuid "2d9c12ff-2167-4a5e-bd55-b17d0a2c68e8")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -34068,7 +34068,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "d9aaf557-3619-4f39-aa1e-62ed7c237ec9")
+			(uuid "e32da1a6-60da-4316-a1c8-524550936f49")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -34086,7 +34086,7 @@
 			(roundrect_rratio 0.212766)
 			(net 54 "Net-(LED3-VDD)")
 			(pintype "passive")
-			(uuid "bad7177a-c023-44e1-8b20-45f1564dc85d")
+			(uuid "97ae9dae-8daa-4ada-a61f-2926d21565d7")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -36312,7 +36312,7 @@
 			(net 9 "col2")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "7725a937-5000-43a6-ba67-77ad4b1ca88e")
+			(uuid "237768ab-64f7-4640-ab0f-80e626ede4d0")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -36330,7 +36330,7 @@
 			(net 35 "Net-(D9-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "37d6d8d2-8557-49c1-9327-f4e80035ccbd")
+			(uuid "f3890875-b7e5-4509-8cab-721f66337dc5")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -36653,7 +36653,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "18b9d4c7-c56d-43dd-b2ab-808ef9016ec1")
+			(uuid "0c352751-6802-489c-bbd3-265351ea3428")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -36671,7 +36671,7 @@
 			(roundrect_rratio 0.212766)
 			(net 60 "Net-(LED9-VDD)")
 			(pintype "passive")
-			(uuid "490e52fc-eb6a-4022-9dfe-0c27c9bf78fe")
+			(uuid "e4713dd0-6a74-4719-8693-5892ca108f86")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -38897,7 +38897,7 @@
 			(net 8 "col1")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "fa801c2a-f4be-47c9-a209-af32cda79ba1")
+			(uuid "ba120401-3a49-4c02-a201-4775e38bfdd8")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -38915,7 +38915,7 @@
 			(net 32 "Net-(D5-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "36a732b6-dd5e-4154-97ef-3f9104a25c1a")
+			(uuid "c5bcf392-a618-4a0e-938e-14b60c927dfa")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -39273,7 +39273,7 @@
 			(net 24 "Net-(LED11-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "f49110b3-3746-40b8-9d72-b88af30a7924")
+			(uuid "fc97a8de-42ac-4d98-a4c5-ecd1285c9427")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -39291,7 +39291,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "6e6e0db9-8975-44d7-81ce-09d070b6a373")
+			(uuid "4fa6c39a-4a0c-47da-b118-3e800e924674")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -39309,7 +39309,7 @@
 			(net 22 "Net-(LED10-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "d86211b4-078e-40ed-b170-d7fc7a21a303")
+			(uuid "39934a87-9c7a-472c-a7fe-192f2dda0caf")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -39327,7 +39327,7 @@
 			(net 62 "Net-(LED11-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "e1b8b656-381b-47cc-8287-aa55a1b90962")
+			(uuid "ba4cbda5-b00a-46b8-be4e-06c6497ba773")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -39793,7 +39793,7 @@
 			(net 1 "row0")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "290f4a86-735c-49c0-9a8a-93b00ea3f59b")
+			(uuid "27e4a5d5-182f-40b9-8259-ed045495b879")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -39813,7 +39813,7 @@
 			(net 31 "Net-(D4-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "2e9a7d4e-6c76-403a-ade7-9cf2edaba070")
+			(uuid "57d91ff0-3ff0-4d05-99b0-611c17c77cb7")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -40268,7 +40268,7 @@
 			(net 3 "row2")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "4354a29a-6ecf-4ea9-b8bd-af55c00a6b26")
+			(uuid "c7f042e9-e215-4e8b-9372-a113503678b0")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -40288,7 +40288,7 @@
 			(net 42 "Net-(D17-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "a51629e3-f099-42c7-bd06-b498d935b5a3")
+			(uuid "cbdd508f-8f99-4287-8003-5245c84faabb")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -40743,7 +40743,7 @@
 			(net 2 "row1")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "8b19bfd5-d6df-4403-a895-423004c2e63c")
+			(uuid "49484bfa-5d9c-4f9d-8d5f-0897b774b983")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -40763,7 +40763,7 @@
 			(net 34 "Net-(D8-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "70ff2f58-c9f6-4235-a98e-3e7ff3c1715a")
+			(uuid "66413bcf-ae71-436d-bdf6-ba903685c087")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -41109,7 +41109,7 @@
 			(net 72 "Net-(LED7-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "a5e58794-9e78-4d94-ac3c-cb84a9b86463")
+			(uuid "9d56b31a-3464-45be-88a1-bf74d2e200e8")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -41127,7 +41127,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "65781d61-3ad8-4201-9d87-418be0900c4b")
+			(uuid "de09f33b-f075-456d-bbfd-c0f49b3a568b")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -41145,7 +41145,7 @@
 			(net 71 "Net-(LED6-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "556457b3-c014-4c81-876a-a8afde71911a")
+			(uuid "a21d2f9d-db7b-44dc-95e3-39611bfcc549")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -41163,7 +41163,7 @@
 			(net 58 "Net-(LED7-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "37de59c8-41cf-429f-9cd8-92bee398feb2")
+			(uuid "2ab2cc3f-24af-44fa-936b-4d17d87d0cb4")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -41520,7 +41520,7 @@
 			(net 75 "Net-(LED15-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "e9568268-7568-4e92-a347-bfd65e847dc1")
+			(uuid "6b383d39-9c42-4bfd-b4e1-361c2dfda1c7")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -41538,7 +41538,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "dd1ea7b2-2023-4389-b01b-d441fc408765")
+			(uuid "867084b7-657e-4efa-a310-f9e21674bcf3")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -41556,7 +41556,7 @@
 			(net 74 "Net-(LED14-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "f08d8474-0a37-4feb-a8db-61a4b92e64b8")
+			(uuid "834a30e3-6518-4236-9b1e-32d30f556919")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -41574,7 +41574,7 @@
 			(net 66 "Net-(LED15-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "6617baa3-1214-4b55-a7bd-ad29fa766b7d")
+			(uuid "b57819a7-2da0-46f4-88b5-d42370490c87")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -43811,7 +43811,7 @@
 			(net 11 "col4")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "5a78af32-4396-4e74-96aa-820e358b45ab")
+			(uuid "7675e829-1553-49ee-af24-5c529a36cb6b")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -43829,7 +43829,7 @@
 			(net 40 "Net-(D15-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "343d710e-a556-4eff-90a0-fa8db3a5f950")
+			(uuid "86f2de93-a456-45cd-a8c1-3bd35fd5c898")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -46067,7 +46067,7 @@
 			(net 11 "col4")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "35758561-34d6-4ea5-add5-12a293f198cb")
+			(uuid "417d281b-701f-4c41-a1ab-33e2f53e1c23")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8 240)
@@ -46085,7 +46085,7 @@
 			(net 43 "Net-(D18-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "263e8de4-464e-4f7a-8261-785d15d16002")
+			(uuid "d41c4db1-53d1-41aa-a651-9f4aab907bbe")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -46443,7 +46443,7 @@
 			(net 71 "Net-(LED6-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "697036b0-8b6f-4328-9cf7-949bd3a05e9a")
+			(uuid "5e277a3e-67ee-4fc5-8f84-204c8cde3722")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -46461,7 +46461,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "cc090b90-ffb6-469f-9eeb-652fa6c8ee5c")
+			(uuid "89a356bd-0033-4de3-a304-bfa781ad6221")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -46479,7 +46479,7 @@
 			(net 70 "Net-(LED5-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "0604a3ad-96c4-434e-b7c8-cf66c3fc4b22")
+			(uuid "2ec142fe-ef53-4fca-afbe-8af2865320a8")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -46497,7 +46497,7 @@
 			(net 57 "Net-(LED6-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "4a8998b6-e85b-4f27-a330-909a0695fcb2")
+			(uuid "bf0c0d2b-136f-42b1-9e1f-6bc23e3989ab")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -46854,7 +46854,7 @@
 			(net 19 "Net-(LED2-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "de4a6c00-6f99-4a44-8205-d773e557a263")
+			(uuid "34e65f60-cf5c-47f2-b7a5-e7627f36d3b4")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -46872,7 +46872,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "d655e17e-64d1-4918-b81b-f1642a1f9df7")
+			(uuid "6de46e4b-6d78-47f9-883b-b21ad7e8cddb")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -46890,7 +46890,7 @@
 			(net 18 "Net-(LED1-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "82c179b7-f0d4-4cb2-bffa-eabc61d90f2b")
+			(uuid "66a0b126-65a1-4b6b-b431-07e013c0acf0")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -46908,7 +46908,7 @@
 			(net 53 "Net-(LED2-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "f9b29109-dbef-4c42-95bc-7a67b9cc4ef3")
+			(uuid "98ad398e-946f-4552-8497-2c2a10c2bc9a")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -47374,7 +47374,7 @@
 			(net 4 "row3")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "82b72a4d-fe0b-47ba-86f3-e94ddb7bc092")
+			(uuid "57e1ea1b-7266-4fad-ada1-abebd780ee5f")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 255)
@@ -47394,7 +47394,7 @@
 			(net 39 "Net-(D14-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "05a911e3-3450-4ada-91ff-40bff5a24394")
+			(uuid "bcef8d06-0791-40bb-8af4-b01928cf307d")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -47849,7 +47849,7 @@
 			(net 3 "row2")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "f001173d-8f57-4601-86bd-dcbd353d77cc")
+			(uuid "948f74ad-340e-4307-9d47-b920e730d57e")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -47869,7 +47869,7 @@
 			(net 17 "Net-(D13-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "a75ceedd-2f72-44e5-a74f-757d365b6282")
+			(uuid "b9256916-1808-4b49-8a78-08fc7e03e681")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -48324,7 +48324,7 @@
 			(net 1 "row0")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "d3ab2cd7-83f3-46cc-9702-ee21840472e2")
+			(uuid "3f42de68-79f0-4ebe-adee-d453b7f91bfd")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -48344,7 +48344,7 @@
 			(net 16 "Net-(D7-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "8addf114-adc0-4d43-86d4-329b2b244ffe")
+			(uuid "83b1d6f4-3383-4799-8e26-da4dddb40966")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -48655,7 +48655,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "4499a2ef-255d-4a92-aa65-da8a7653b3e4")
+			(uuid "116153c8-c59c-41fa-b29a-c39ba4e4fa54")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -48673,7 +48673,7 @@
 			(roundrect_rratio 0.212766)
 			(net 66 "Net-(LED15-VDD)")
 			(pintype "passive")
-			(uuid "0b74a072-2896-40d9-841a-541406c41f13")
+			(uuid "3580e24e-2183-40f2-9782-54298c0aae02")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -49346,7 +49346,7 @@
 			(net 14 "BAT_switch")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "9eedc7e9-7bd5-4965-bdf6-1ae6c036418f")
+			(uuid "4e52c3fd-65ea-4da7-80d3-c08856045b40")
 		)
 		(pad "2" smd roundrect
 			(at -0.5 -2)
@@ -49366,7 +49366,7 @@
 			(net 28 "BAT")
 			(pinfunction "Pin_2")
 			(pintype "passive")
-			(uuid "65adc50f-6c56-4e5c-b2d9-173c8c0b1133")
+			(uuid "d9580052-01df-47ef-b5c4-e832c2324d47")
 		)
 		(pad "MP" smd roundrect
 			(at -1.8 1.875)
@@ -49380,21 +49380,21 @@
 			(size 1.2 1.8)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.208333)
-			(uuid "771fe065-3fb6-460d-ad8c-c16a1ed3c324")
+			(uuid "b9602d18-db40-4d7d-9072-a9d8c6ebec68")
 		)
 		(pad "MP" smd roundrect
 			(at 1.8 1.875)
 			(size 1.2 1.8)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(uuid "771fe065-3fb6-460d-ad8c-c16a1ed3c324")
+			(uuid "b4232cf5-ce3c-439f-897f-d015cdf1913a")
 		)
 		(pad "MP" smd roundrect
 			(at 1.8 1.875)
 			(size 1.2 1.8)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.208333)
-			(uuid "771fe065-3fb6-460d-ad8c-c16a1ed3c324")
+			(uuid "dee0b877-45a7-4aea-9bc4-749aca8ac5c0")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_JST.3dshapes/JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal.step"
@@ -51620,7 +51620,7 @@
 			(net 10 "col3")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "5e54ff28-8c1c-4ab8-ac0b-1a5c2052be7f")
+			(uuid "e210b4c9-56cb-42d9-9244-35037d6c1e4f")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -51638,7 +51638,7 @@
 			(net 38 "Net-(D12-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "bd515503-6c44-4891-8d5f-be9f10bd0100")
+			(uuid "e9b2f6f2-d124-4bac-87c8-0aba79d617b5")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -51961,7 +51961,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "966e99cf-ed31-44ee-b941-c434755e8b31")
+			(uuid "a505dd23-a349-4be4-92f3-4d88d5569737")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -51979,7 +51979,7 @@
 			(roundrect_rratio 0.212766)
 			(net 67 "Net-(LED16-VDD)")
 			(pintype "passive")
-			(uuid "b3d9510d-83fc-485b-ab24-767cc8d16029")
+			(uuid "f31b658f-6312-432c-b52a-b484a2856f7c")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -52636,7 +52636,7 @@
 			(net 2 "row1")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "ab211467-0e96-45c1-8421-5baa1bbf7131")
+			(uuid "a1274861-e0d2-4727-aac5-cb5c622ba559")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -52656,7 +52656,7 @@
 			(net 29 "Net-(D2-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "4a19c8cb-252c-4968-be20-9c6ebedf12a4")
+			(uuid "a569620d-7f2c-467b-a43c-73272e0c2057")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -53111,7 +53111,7 @@
 			(net 3 "row2")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "79a26014-4ed1-473e-86e0-259e05be08ac")
+			(uuid "6b7cc957-4c3d-4e2b-894b-b96b3029a1c6")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -53131,7 +53131,7 @@
 			(net 33 "Net-(D6-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "91263a86-5641-40ce-b605-7d27e1fe957e")
+			(uuid "cb8d8d5a-003a-45c9-9cbb-f4b4aced7719")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -53477,7 +53477,7 @@
 			(net 20 "Net-(LED3-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "1c2e5d11-4268-4bf7-8269-a6fc431c77e6")
+			(uuid "9c0427f7-0a54-404a-9e7d-3bb54bd56adb")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -53495,7 +53495,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "54206fc6-80da-4211-b58a-a996edd947f4")
+			(uuid "45bd449f-6c2e-4cea-a290-e03b4807f3f9")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -53513,7 +53513,7 @@
 			(net 19 "Net-(LED2-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "ce88e088-c455-40f8-8aad-98e589884bff")
+			(uuid "1bad9b1e-41e0-4a35-8edd-6a81e61cece5")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -53531,7 +53531,7 @@
 			(net 54 "Net-(LED3-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "3214a0b1-a796-409d-a513-81ed6f7bb2ac")
+			(uuid "46df76ad-1989-4fcd-a7b2-4e0cc5671362")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -53853,7 +53853,7 @@
 			(roundrect_rratio 0.212766)
 			(net 5 "GND")
 			(pintype "passive")
-			(uuid "daec7281-56ab-442a-bcab-0f35eb1d837b")
+			(uuid "1b8ee364-7fb2-4169-a55e-527926683518")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -53871,7 +53871,7 @@
 			(roundrect_rratio 0.212766)
 			(net 28 "BAT")
 			(pintype "passive")
-			(uuid "5ee63378-9a9c-4831-843b-3592d7af06bf")
+			(uuid "3c382abb-34aa-4578-bc2d-9ccf06ffa098")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -54217,7 +54217,7 @@
 			(net 27 "Net-(LED16-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "311b96b0-b211-4ba4-9640-886f1e80fa77")
+			(uuid "6f2ea313-4080-45a6-a07b-8a170137ccc4")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7)
@@ -54235,7 +54235,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "b459d208-63bb-4877-adbd-8febb3889e9b")
+			(uuid "1d8a1b12-edd7-41ee-a173-97ae1927f9cd")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7)
@@ -54253,7 +54253,7 @@
 			(net 75 "Net-(LED15-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "449de857-d09d-441e-a6a8-1ede58f42ac7")
+			(uuid "ca2a6c13-2156-491a-b99c-a7bc98d55d61")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7)
@@ -54271,7 +54271,7 @@
 			(net 67 "Net-(LED16-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "9044f911-03f6-4d2b-9fa2-7c1536d4b1f9")
+			(uuid "4f57fcab-f8e0-4b81-aeec-2c72bc1d38a2")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -54737,7 +54737,7 @@
 			(net 2 "row1")
 			(pinfunction "K")
 			(pintype "passive")
-			(uuid "990c6c58-f84d-4805-b928-3c5f78883cde")
+			(uuid "8980d902-db03-4771-85b0-172be4046eda")
 		)
 		(pad "2" smd roundrect
 			(at 1.25 0 270)
@@ -54757,7 +54757,7 @@
 			(net 38 "Net-(D12-A)")
 			(pinfunction "A")
 			(pintype "passive")
-			(uuid "70127a1e-d9cd-45ce-b44b-10c143ee0131")
+			(uuid "11ae7a10-32fe-4ed2-85b4-81577498e5ff")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
@@ -55068,7 +55068,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "a597286a-a46a-4054-bfdd-34fccf04273f")
+			(uuid "0c893a74-c374-42c1-b9bc-a76d4c1cb3ab")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -55086,7 +55086,7 @@
 			(roundrect_rratio 0.212766)
 			(net 58 "Net-(LED7-VDD)")
 			(pintype "passive")
-			(uuid "69476768-34f7-4bf2-aa01-2c60cc3a3bce")
+			(uuid "35b98778-efff-4477-bf7d-970b24fc075b")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -55397,7 +55397,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "fe4e36a5-1f60-4492-b46d-105fdcce80ed")
+			(uuid "1c7f9a12-4bbb-4a79-98cc-387f2c3df36a")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -55415,7 +55415,7 @@
 			(roundrect_rratio 0.212766)
 			(net 59 "Net-(LED8-VDD)")
 			(pintype "passive")
-			(uuid "8e984e6e-f901-4548-a0af-30dcaedbd1df")
+			(uuid "46fc6777-15c3-4615-a31d-b3904f182249")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -57641,7 +57641,7 @@
 			(net 8 "col1")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "54980cca-375f-4e14-b60e-3561d2eded29")
+			(uuid "e7850fb5-08b6-4d5f-83da-b0411fd54c71")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -57659,7 +57659,7 @@
 			(net 31 "Net-(D4-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "23193af9-a310-4e34-baff-87a2150f97df")
+			(uuid "07728c4d-f773-49f5-9c58-19ffe84a31e6")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -58017,7 +58017,7 @@
 			(net 77 "unconnected-(LED18-DOUT-Pad1)")
 			(pinfunction "DOUT")
 			(pintype "output")
-			(uuid "6e251404-5df5-4fa5-bc60-538397c6820c")
+			(uuid "0cde7041-f922-4b7a-8c79-91eea2a5539d")
 		)
 		(pad "2" smd rect
 			(at -2.75 -0.7 60)
@@ -58035,7 +58035,7 @@
 			(net 5 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
-			(uuid "70fa9f76-7f3e-45e3-b0da-b82719110eba")
+			(uuid "d1e2f96e-16d7-43d5-9dae-47668369575f")
 		)
 		(pad "3" smd rect
 			(at -2.75 0.7 60)
@@ -58053,7 +58053,7 @@
 			(net 76 "Net-(LED17-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
-			(uuid "5b7a4a7c-f353-46cc-b3eb-5c00cc6fb63b")
+			(uuid "0264febe-0db6-4859-b70b-14d8b6c82903")
 		)
 		(pad "4" smd rect
 			(at -2.75 0.7 60)
@@ -58071,7 +58071,7 @@
 			(net 69 "Net-(LED18-VDD)")
 			(pinfunction "VDD")
 			(pintype "power_in")
-			(uuid "9e3a72f4-1ccf-4f75-b988-573c12f405bf")
+			(uuid "2922411c-ebe4-4684-9554-e10c6eee46e8")
 		)
 		(embedded_fonts no)
 		(model "/Users/foostan/src/github.com/foostan/kbd/kicad-packages3D/kbd.3dshapes/YS-SK6812MINI-E.step"
@@ -58393,7 +58393,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "6f00e265-edcb-4585-b6ec-c8e790f2dbda")
+			(uuid "4f9d5da5-d996-4bc3-a21e-cc1712c23d52")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 330)
@@ -58411,7 +58411,7 @@
 			(roundrect_rratio 0.212766)
 			(net 69 "Net-(LED18-VDD)")
 			(pintype "passive")
-			(uuid "844bae1f-0f9b-49d9-b5fe-93a37ee1a2a9")
+			(uuid "e0a2ba92-ebb1-4f22-9058-8924428af1e6")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -60637,7 +60637,7 @@
 			(net 7 "col0")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "df387be9-5a5b-4797-a632-f5b273aee849")
+			(uuid "c81a995d-6cfd-4a2d-9561-b935ef667a51")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -60655,7 +60655,7 @@
 			(net 30 "Net-(D3-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "6657b849-7ce7-4636-98ad-e31744ad760f")
+			(uuid "37fc2d7e-3223-4fcc-890c-5a179eabd839")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -60978,7 +60978,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "bb7cd1ad-3da3-41bf-844b-aa94c732c59b")
+			(uuid "159b1017-6b67-4f98-8d8e-cad84f5a74ec")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -60996,7 +60996,7 @@
 			(roundrect_rratio 0.212766)
 			(net 64 "Net-(LED13-VDD)")
 			(pintype "passive")
-			(uuid "6f540d08-7f50-4c7e-85c2-5dac8e967b0c")
+			(uuid "a4b40333-fea1-42e5-b5b9-dffd002adea3")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -61307,7 +61307,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "95f5ab23-3ab8-41cd-bc88-ada03fcc7cb6")
+			(uuid "27e4fa7c-f771-42e1-ba9d-ae23f1a4d614")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 270)
@@ -61325,7 +61325,7 @@
 			(roundrect_rratio 0.212766)
 			(net 61 "Net-(LED10-VDD)")
 			(pintype "passive")
-			(uuid "cf6659f9-1459-45cd-a91b-4777f3193335")
+			(uuid "15a3e885-8075-446e-b533-77f5bf4db2b7")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -63551,7 +63551,7 @@
 			(net 11 "col4")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "f19b60c1-510e-4e8a-87c0-93a0cf6ceea6")
+			(uuid "8391b5ac-1c5e-4a65-ae9a-e3d7e09b4581")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -63569,7 +63569,7 @@
 			(net 42 "Net-(D17-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "b2af680c-1f87-4b81-a7cb-62081ec629b3")
+			(uuid "48d3e386-2130-46c5-81b1-025d054ad572")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
@@ -64145,7 +64145,7 @@
 			(roundrect_rratio 0.212766)
 			(net 6 "VCC")
 			(pintype "passive")
-			(uuid "f0d85a29-bb0a-479e-80e0-8bb214f67af5")
+			(uuid "f5e72488-eedf-48fc-937f-40fc16ea6972")
 		)
 		(pad "2" smd roundrect
 			(at 1.0375 0 255)
@@ -64163,7 +64163,7 @@
 			(roundrect_rratio 0.212766)
 			(net 65 "Net-(LED14-VDD)")
 			(pintype "passive")
-			(uuid "2c651c33-8577-4bee-acae-0ad9e86299e1")
+			(uuid "ca1806be-bfa4-46de-83ed-0c7104c16555")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
@@ -66389,7 +66389,7 @@
 			(net 9 "col2")
 			(pinfunction "1")
 			(pintype "passive")
-			(uuid "f5c2b79e-b790-4576-b652-c12add057fb9")
+			(uuid "8bff9e50-af64-4b4d-8c20-cf03c6991c09")
 		)
 		(pad "2" smd rect
 			(at -8.275 3.8)
@@ -66407,7 +66407,7 @@
 			(net 34 "Net-(D8-A)")
 			(pinfunction "2")
 			(pintype "passive")
-			(uuid "281c51bc-c252-4303-8a2c-da85c6ef2279")
+			(uuid "7621e379-0892-4682-80c7-a41a8dbdff47")
 		)
 		(embedded_fonts no)
 		(model "${KICAD6_3RD_PARTY}/3dmodels/com_github_perigoso_keyswitch-kicad-library/3d-library.3dshapes/SW_Hotswap_Kailh_Choc_V1.wrl"
